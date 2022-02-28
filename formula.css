@@ -1,21 +1,101 @@
+:root {
+  --dew-shift: background 28ms;
+  --dew-slick: floralwhite;
+  --dew-slime: #111;
+  --dew-solar: thistle;
+  --dew-lunar: #303;
+}
+
+.dew-sun {
+  --dew-solar: pink;
+  --dew-lunar: #303;
+}
+
+.dew-air {
+  --dew-solar: #bae4ea;
+  --dew-lunar: #303;
+}
+
+.dew-h20 {
+  --dew-solar: #bae;
+  --dew-lunar: #303;
+}
+
+.dew-mud {
+  --dew-solar: peru;
+  --dew-lunar: #303;
+}
+
+:link {
+  box-shadow: 0 0 1em 1ex purple;
+}
+
 html {
-  font-size: calc(1ex + 8vmax);
+  font-family: sans-serif;
+  font-size: calc(1em + 1vw + 1vh);
+}
+
+.unity {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.unified {
+  align-self: center;
+  position: relative;
+  padding: 1em;
+  flex-basis: 100%;
+  min-height: 61vh;
+}
+
+.unified p {
+  margin: auto;
+  position: absolute;
+  bottom: 38%;
 }
 
 body {
+  margin: 0;
+}
+
+.voz {
+  font-size: 0;
+}
+
+.embody {
+  box-sizing: border-box;
   display: flex;
   flex-flow: column;
-  margin: auto;
-}
-
-main {
-  align-items: center;
-  display: flex;
-  flex-flow: row;
   justify-content: center;
-  min-height: 100vh;
+  align-items: center;
+  margin: 1ex 0;
+  margin-block: 1ex;
+  margin-inline: 0;
+  overflow-wrap: anywhere;
+  padding: 1em;
+  min-height: calc(100vh - 2ex);
+  writing-mode: vertical-lr;
+  transform: rotateY(180deg);
 }
 
-math {
-  font-family: sans-serif;
+.eye {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pad {
+  box-sizing: border-box;
+  padding: 1ex;
+}
+
+@media (prefers-reduced-motion) {
+  [class] {
+    transition: none;
+  }
 }
