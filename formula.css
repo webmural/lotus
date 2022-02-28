@@ -65,37 +65,3 @@ body {
 .voz {
   font-size: 0;
 }
-
-.embody {
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1ex 0;
-  margin-block: 1ex;
-  margin-inline: 0;
-  overflow-wrap: anywhere;
-  padding: 1em;
-  min-height: calc(100vh - 2ex);
-  writing-mode: vertical-lr;
-  transform: rotateY(180deg);
-}
-
-.eye {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.pad {
-  box-sizing: border-box;
-  padding: 1ex;
-}
-
-@media (prefers-reduced-motion) {
-  [class] {
-    transition: none;
-  }
-}
