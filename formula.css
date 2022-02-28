@@ -1,21 +1,67 @@
+:root {
+  --dew-shift: background 28ms;
+  --dew-slick: floralwhite;
+  --dew-slime: #111;
+  --dew-solar: thistle;
+  --dew-lunar: #303;
+}
+
+.dew-sun {
+  --dew-solar: pink;
+  --dew-lunar: #303;
+}
+
+.dew-air {
+  --dew-solar: #bae4ea;
+  --dew-lunar: #303;
+}
+
+.dew-h20 {
+  --dew-solar: #bae;
+  --dew-lunar: #303;
+}
+
+.dew-mud {
+  --dew-solar: peru;
+  --dew-lunar: #303;
+}
+
+:link {
+  box-shadow: 0 0 1em 1ex purple;
+}
+
 html {
-  font-size: calc(1ex + 8vmax);
+  font-family: sans-serif;
+  font-size: calc(1em + 1vw + 1vh);
+}
+
+.unity {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.unified {
+  align-self: center;
+  position: relative;
+  padding: 1em;
+  flex-basis: 100%;
+  min-height: 61vh;
+}
+
+.unified p {
+  margin: auto;
+  position: absolute;
+  bottom: 38%;
 }
 
 body {
-  display: flex;
-  flex-flow: column;
-  margin: auto;
+  margin: 0;
 }
 
-main {
-  align-items: center;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-math {
-  font-family: sans-serif;
+.voz {
+  font-size: 0;
 }
